@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* прижатие footer к низу сранице  */
-html{
-    
-}
 body{
     overflow:auto;
     display: flex;
@@ -14,6 +10,14 @@ body{
     min-height: 100vh;
     
 }
+.header{
+    @apply backdrop-blur-[10px]  flex items-center justify-between border-b px-5 py-3 mx-1;
+}
+.footer-wed{
+    @apply mx-1 h-36 border-t text-gray-300 backdrop-blur-[5px];
+}
+
 footer{
     margin-top: auto;
 }
+
